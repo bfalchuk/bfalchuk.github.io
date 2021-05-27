@@ -1,0 +1,43 @@
+/**
+ * Author:  Ben Falchuk (some code adapted from web course "three.js journey" by B.Simon)
+ * Created: May 2021
+ * 
+ * site wide CSS
+ * 
+ **/
+ body {
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	color: #222;
+	background-color: #BBB;
+	font-family: arial;
+	font-size: 100%;
+}
+#info .top {
+	color: white;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	padding: 5px;
+	text-align: center;
+}
+#info .bottom {
+	color: white;
+	position: absolute;
+	bottom: 0px;
+	right: 5px;
+	padding: 5px;
+}
+#btn_info{
+	position: absolute;
+	top: 5px;
+	right: 8px;
+	z-index: 999;
+}
+#btn_about{
+	position: absolute;
+	top: 62px;
+	right: 8px;
+	z-index: 999;
+}
