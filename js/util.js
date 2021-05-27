@@ -31,3 +31,23 @@ function addThreejsStats(){ //Stats.js - https://github.com/mrdoob/stats.js
     stats.domElement.style.bottom	= '0px';
     document.body.appendChild( stats.domElement );
 }
+
+// Hide panels to avoid (known?) call stack issues when offcanvas panel and modals are combined
+function hidePanels(){ 
+    var offpanels = [
+    bootstrap.Offcanvas.getInstance(document.getElementById('offcanvaspanel1')),
+    bootstrap.Offcanvas.getInstance(document.getElementById('offcanvaspanel2')),
+    ];
+    for(panel of offpanels) if(panel) panel.hide(); //hide each
+}
+
+function showJumpModal(){
+    hidePanels(); //hide panels to avoid stack issues
+    var myModal = new bootstrap.Modal(document.getElementById('modal_jump')); 
+    myModal.show(); //show modal
+}
+
+// Jump to repo (if desired)
+function jump2Repo(){
+    window.location.assign('https://github.com/bfalchuk/bfalchuk.github.io');
+}

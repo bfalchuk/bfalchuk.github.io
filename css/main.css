@@ -33,11 +33,14 @@
 	position: absolute;
 	top: 5px;
 	right: 8px;
-	z-index: 999;
+	/*z-index: 999;*/
 }
 #btn_about{
 	position: absolute;
 	top: 62px;
 	right: 8px;
-	z-index: 999;
+	/*z-index: 999;*/
+}
+#img_about{
+	cursor:pointer;
 }
